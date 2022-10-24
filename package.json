@@ -1,0 +1,30 @@
+{
+  "name": "kinesis-js-practice",
+  "version": "1.0.0",
+  "description": "Send and get real time data with AWS Kinesis",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litsynp/kinesis-js-practice.git"
+  },
+  "author": "litsynp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/litsynp/kinesis-js-practice/issues"
+  },
+  "homepage": "https://github.com/litsynp/kinesis-js-practice#readme",
+  "dependencies": {
+    "@aws-sdk/client-kinesis": "^3.194.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.7.1"
+  }
+}
