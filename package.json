@@ -4,8 +4,8 @@
   "description": "Send and get real time data with AWS Kinesis",
   "type": "module",
   "scripts": {
-    "start": "node ./src/index.js",
-    "test": "jest --verbose"
+    "publish-events": "node ./src/scripts/publish-events.js",
+    "get-records": "node ./src/scripts/get-records.js"
   },
   "repository": {
     "type": "git",
