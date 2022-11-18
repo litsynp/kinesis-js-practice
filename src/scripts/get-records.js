@@ -8,7 +8,7 @@ async function execute() {
   let shardIterator = shardIteratorResult.ShardIterator
 
   while (true) {
-    console.log(`ShardIterator: ${shardIterator}`)
+    console.log(`ShardIterator: ${shardIterator.substring(0, 5)}...${shardIterator.substring(shardIterator.length - 5)}`)
     const getRecordsResult = await getRecords({
       shardIterator: shardIterator,
       limit: 10,
@@ -18,7 +18,7 @@ async function execute() {
     const textDecoder = new TextDecoder()
     for (const record of getRecordsResult.Records) {
       const dataStr = textDecoder.decode(record.Data)
-      console.log(dataStr)
+      console.log(JSON.stringify(dataStr))
     }
   }
 }
